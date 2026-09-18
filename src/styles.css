@@ -227,7 +227,8 @@ button {
   background: var(--green);
 
   box-shadow: 0 12px 24px rgba(7, 152, 61, 0.16);
-}-primary:hover {
+}
+-primary:hover {
   background: var(--green-dark);
 
   box-shadow: 0 16px 30px rgba(7, 152, 61, 0.2);
@@ -1058,9 +1059,10 @@ button {
   .topbar-inner {
     min-height: 72px;
 
-    grid-template-columns: auto 1fr auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-
   .brand img {
     width: 86px;
   }
@@ -1182,6 +1184,10 @@ button {
 
   .about-highlights > div:not(:nth-last-child(-n + 2)) {
     border-bottom: 1px solid var(--line);
+  }
+
+  .topbar-actions {
+    margin-left: auto;
   }
 }
 
